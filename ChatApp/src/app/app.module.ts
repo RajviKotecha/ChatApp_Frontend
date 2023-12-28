@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChatInputComponent } from './components/chat-input/chat-input.component';
+import { ChatMessagesComponent } from './components/chat-messages/chat-messages.component';
+import { ChatRoomComponent } from './components/chat-room/chat-room.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatInputComponent,
+    ChatMessagesComponent,
+    ChatRoomComponent
   ],
   imports: [
     BrowserModule,
