@@ -1,41 +1,48 @@
 .chat-room {
-    display: flex;
-    justify-content: space-between;
-    max-width: 60%;
-    margin: auto;
-    margin-top: 15vh;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .chat-input {
-    display: flex;
-  }
-  
-  input {
-    flex: 1;
-    padding: 8px;
-    margin-right: 5px;
-  }
-  
-  .chat-messages {
-    max-height: 400px;
-    overflow-y: auto;
-  }
-  
-  .chat-messages div {
-    background-color: #f2f2f2;
-    padding: 8px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: aliceblue;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  color: #495057;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-weight: bold;
+}

@@ -1,60 +1,83 @@
 .chat-container {
-    max-width: 60%;
-    margin: auto;
-    margin-top: 15vh !important;
-  
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-bar {
-    width: 90%;
-  }
-  
-  .messages-container {
-    flex-grow: 1;
-    overflow-y: auto;
-    margin-top: 4px;
-    max-height: 60vh;
-  }
-  
-  .messages {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .my-msg,
-  .not-my-msg {
-    display: inline-block;
-    max-width: 70%;
-    border-radius: 5px 0px 0px 5px;
-    padding: 8px;
-    margin-bottom: 1vh;
-  }
-  
-  .my-msg {
-    background-color: #4caf50;
-    color: white;
-    float: right;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  
-  .not-my-msg {
-    background-color: #f2f2f2;
-    color: black;
-    float: left;
-    margin-left: 0;
-    margin-right: auto;
-  }
-  
-  .input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .back-btn {
-    width: 5%;
-  }
-  
+  max-width: 70%;
+  margin: auto;
+  margin-top: 10vh !important;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.input-bar {
+  width: 92%;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 8px;
+}
+
+.messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+  max-height: 60vh;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-msg,
+.not-my-msg {
+  display: inline-block;
+  max-width: 70%;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 1vh;
+}
+
+.my-msg {
+  background-color: #4caf50;
+  color: white;
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.not-my-msg {
+  background-color: #f2f2f2;
+  color: black;
+  float: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.back-btn {
+  width: 5%;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #495057;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

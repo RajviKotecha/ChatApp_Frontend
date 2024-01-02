@@ -1,8 +1,8 @@
-<div class="chat-container w-50 m-auto card px-3 py-3">
+<div class="chat-container w-75 m-auto card px-4 py-4">
   <button type="button" class="btn btn-secondary back-btn" (click)="goBack()">
     <i class="bi bi-arrow-left"></i>
   </button>
-  <div class="card my-3">
+  <div class="card my-4 p-3 rounded">
     <div class="messages-container" #messagesContainer>
       <div *ngFor="let message of messages" class="messages">
         <div
@@ -17,13 +17,13 @@
     </div>
   </div>
 
-  <div class="input d-flex justify-content-between">
+  <div class="input d-flex justify-content-between align-items-center mt-3">
     <input
       (keyup.enter)="send()"
       [(ngModel)]="inputMessage"
       class="input-bar form-control"
       placeholder="Type your message..."
     />
-    <button class="btn btn-primary px-4" (click)="send()">Send</button>
+    <button class="btn btn-primary px-4 ml-2" (click)="send()">Send</button>
   </div>
 </div>
